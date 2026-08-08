@@ -4,6 +4,7 @@ const registerButton = document.querySelector(".register-btn");
 const formTitle = document.querySelector(".form-title");
 const registerForm = document.querySelector(".register-form");
 const loginForm = document.querySelector(".login-form");
+const eyeButton = document.querySelectorAll(".eye-btn");
 
 // Show Register Form When We Click on the Register Button
 registerButton.addEventListener("click", () => {
@@ -31,4 +32,25 @@ loginButton.addEventListener("click", () => {
   // Show Login Form and Hide Register Form
   registerForm.classList.remove("active");
   loginForm.classList.add("active");
+});
+
+// Show and Hide Password Input
+eyeButton.forEach((eye) => {
+  eye.addEventListener("click", () => {
+
+    // Get Previous Element
+    const input = eye.previousElementSibling;
+
+    // Change Input Type Into Text
+    if (input.type === "password") {
+      input.type = "text";
+      eye.firstElementChild.classList.replace("fa-eye", "fa-eye-slash");
+    }
+
+    // Change Input Type Into Password
+    else {
+      input.type = "password";
+      eye.firstElementChild.classList.replace("fa-eye-slash", "fa-eye");
+    }
+  });
 });
