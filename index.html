@@ -32,24 +32,33 @@
             <input
               type="text"
               name="email"
-              required
               autocomplete="off"
               class="form-input"
               placeholder="Email Address"
             />
+
+            <!-- Alert Text-->
+            <span class="alert-text" id="login-email-alert"
+              >Enter valid name baby! ❌</span>
           </div>
           <!-- password input -->
           <div class="input-box">
-            <input
-              type="password"
-              name="password"
-              required
-              class="form-input password-input"
-              placeholder="Password"
-            />
-            <span class="eye-btn">
-              <i class="fa fa-eye"></i>
-            </span>
+            <div class="password-box-inner">
+              <input
+                type="password"
+                name="password"
+                class="form-input password-input"
+                id="login-password-input"
+                placeholder="Password"
+              />
+              <!-- eye button -->
+              <span class="eye-btn">
+                <i class="fa fa-eye"></i>
+              </span>
+            </div>
+
+            <!-- alert text -->
+            <span class="alert-text" id="login-password-alert">Enter valid name baby! ❌</span>
           </div>
 
           <!-- forgot password -->
@@ -71,37 +80,47 @@
             <input
               type="text"
               name="email"
-              required
               autocomplete="off"
               class="form-input"
               placeholder="Email Address"
             />
           </div>
+          <!-- alert text -->
+          <span class="alert-text" id="register-email-alert">Enter valid name baby! ❌</span>
+
           <!-- password input -->
           <div class="input-box">
-            <input
-              type="password"
-              name="password"
-              required
-              class="form-input password-input"
-              placeholder="Password"
-            />
-            <span class="eye-btn">
-              <i class="fa fa-eye"></i>
-            </span>
+            <div class="password-box-inner">
+              <input
+                type="password"
+                name="password"
+                class="form-input password-input"
+                placeholder="Password"
+              />
+              <span class="eye-btn">
+                <i class="fa fa-eye"></i>
+              </span>
+            </div>
+            <!-- alert text -->
+            <span class="alert-text" id="register-password-alert">Enter valid name baby! ❌</span>
           </div>
+
+
           <!-- confirm password input -->
           <div class="input-box">
-            <input
-              type="password"
-              name="password"
-              required
-              class="form-input password-input"
-              placeholder="Confirm Password"
-            />
-            <span class="eye-btn">
-              <i class="fa fa-eye"></i>
-            </span>
+            <div class="password-box-inner">
+              <input
+                type="password"
+                name="password"
+                class="form-input password-input"
+                placeholder="Confirm Password"
+              />
+              <span class="eye-btn">
+                <i class="fa fa-eye"></i>
+              </span>
+            </div>
+            <!-- alert text -->
+            <span class="alert-text" id="register-confirm-password-alert">Enter valid name baby! ❌</span>
           </div>
 
           <button type="submit" class="form-btn">Sign Up</button>
@@ -117,10 +136,14 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>Created With By Fateme Helali</p><br>
-      GitHub : <a href="https://github.com/Helali-Dev" class="link">https://github.com/Helali-Dev</a>
-     </footer>
-         <!-- SCRIPT -->
+      <p>Created With By Fateme Helali</p>
+      <br />
+      GitHub :
+      <a href="https://github.com/Helali-Dev" class="link"
+        >https://github.com/Helali-Dev</a
+      >
+    </footer>
+    <!-- SCRIPT -->
     <script src="./main.js"></script>
   </body>
 </html>
