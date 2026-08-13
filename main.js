@@ -6,6 +6,8 @@ const registerForm = document.querySelector(".register-form");
 const loginForm = document.querySelector(".login-form");
 const eyeButton = document.querySelectorAll(".eye-btn");
 const navigateLinks = document.querySelectorAll(".navigate-link");
+const headerButtons=document.querySelectorAll(".header-btn");
+const alertTexts=document.querySelectorAll(".alert-text");
 
 // Login Elements
 const loginEmailInput = document.getElementById("login-email-input");
@@ -224,6 +226,16 @@ const validateRegisterForm = () => {
 
   return true;  // if inputs true
 };
+
+// Reset Form Alert When Switch to Another Forms
+headerButtons.forEach((btn) => {
+  btn.addEventListener("click" , () => {
+    alertTexts.forEach((alert)=>
+  {
+    alert.textContent="";
+  })
+  })
+})
 
 
 
